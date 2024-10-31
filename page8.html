@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="final.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('concerthall.jpg')">
+		<div id="container">
+	<header><h1>Contact</h1></header>
+	<nav>
+	<ul>
+ 	  <li><a href="index.html">Home</a></li>
+		<li><a href="page2.html">Reeds</a></li>
+		<li><a href="page3.html">Flutes</a></li>
+		<li><a href="page4.html">Brass</a></li>
+		<li><a href="page6.html">Dictionary</a></li>
+		<li><a href="page7.html">Events</a></li>
+		<li><a href="page8.html" class="active">Contact</a></li>
+	</ul>
+	</nav>
+	<main><br>
+	  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','concerthall.jpg',1)"><img src="closeupconcert.jpg" alt="" width="500" height="344" class="floatright" id="Image1"></a>
+	<p>Suddenly have an interest in band now? Thought so. Not sure where to start? We've got you covered. Listed below are links to some of the best websites to order instruments, music, and more.</p>
+		<p>Click <a href="https://usa.yamaha.com/products/musical_instruments/index.html" target="_blank"> here</a> to visit Yamaha's official website, where you can find just about every single instrument you can dream of, along with all necessary equipment.</p>
+	  <p>Click <a href="https://www.jwpepper.com/sheet-music/welcome.jsp" target="_blank">here</a> for a massive selection of sheet music to get you started on your musical journey for an affordable price! JW Pepper offers music for all musicianship levels and groups, so there's a guarentee you can find exactly what you're looking for (or find something you didn't even know you needed in the first place.) </p>
+		
+		<form action="mailto:randomemail@gmail.com" id="musicform">
+			 <p>Still have questions? Ask us in the box below! <br>
+<br><textarea cols="75" rows="10"></textarea></p>
+			<input type="submit"><input type="reset">
+		
+		</form>
+	</main>
+	</div>
+</body>
+</html>

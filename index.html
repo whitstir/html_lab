@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<link href="final.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('anotherpic.jpg')">
+	<div id="container">
+	<header><h1 class="white">Band 101: Everything You Need to Know About It</h1></header>
+			
+	<nav>
+	<ul>
+	 <li><a href="index.html" class="active">Home</a></li>
+		<li><a href="page2.html">Reeds</a></li>
+		<li><a href="page3.html">Flutes</a></li>
+		<li><a href="page4.html">Brass</a></li>
+		<li><a href="page6.html">Dictionary</a></li>
+		<li><a href="page7.html">Events</a></li>
+		<li><a href="page8.html">Contact</a></li>
+	</ul>
+	</nav>
+	<main>
+	<br>
+		<p>In order to have a quality ensemble sound, many different instruments must be present. Those poor, unfortunate, and uneducated souls that haven't been exposed to the wonders and glories of a band might only be able to list off a few instruments. Typically, these are as follows: trumpet, saxophone, and a flute. Although they are correct in how these are, in fact, band instruments, the complexities go much further.</p>
+		<p>Not sure where to begin? Lucky for you, everything you need has been nicely laid out and clearly labeled. All the information required to have a solid foundation on the concept of band can be found through any of the links at top. Each link will bring you to a detailed page on that topic, including all definitions of important terms in an easy to understand way. Beginner to music? We got you. Not sure of a musical term? We can help. Feeling left out after making friends with a bunch of weird band kids and then realizing that it's almost like their speaking another language? No worries. You've been saved.  </p><br>
+	  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','anotherpic.jpg',1)"><img src="concert band.jpg" alt="" width="1000" height="672" id="Image2"></a> 
+		
+
+	</main>
+     </div>
+</body>
+</html>
